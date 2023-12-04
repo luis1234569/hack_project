@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1 class="text-center">Listas</h1>
+<ul class="list-group">
+  {% for item in lista %}
+    <li class="list-group-item">{{item}}</li>
+  {% endfor %}
+</ul>
+
+<h1 class="text-center">Diccionarios</h1>
+<ul class="list-group">
+  {% for key, value in diccionario.items %}
+    <li class="list-group-item">
+      <h1>{{key}} </h1>
+      <p>{{value}} </p>
+    </li>
+  {% endfor %}
+</ul>
+
+<h1 class="text-center">Tuplas</h1>
+<ul class="list-group">
+  
+  {% for item in tupla %}
+    <li class="list-group-item">{{item}}</li>
+  {% endfor %}
+    
+</ul>
+
+{% endblock content %}

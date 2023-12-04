@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'modified'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'hack_project',
         'USER': 'postgres',
-        'PASSWORD': '1234',
+        'PASSWORD': '123',
         'HOST': 'localhost',
         'PORT': '5432',
     }
