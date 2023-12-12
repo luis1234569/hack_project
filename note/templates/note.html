@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<h1>nada bro</h1>
+<ul class="list-group">
+    
+    {% for item in elements %}
+       <li class="list-group-item">{{item}} </li>
+    {% endfor %}
+        
+  </ul>
+
+<h2>sapo</h2>
+
+{% for key, value in diccionario.items %}
+  <li class="list-group-item"><span class="bg-green-100 text-lg">{{key}} </span> {{value}} </li>
+{% endfor %}
+    
+{% endblock content %}
+    
+
